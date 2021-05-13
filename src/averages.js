@@ -56,9 +56,10 @@ async function averages() {
     average2 = `${average2}ms`;
   }
 
-  console.log("\nAverage Run Times:");
-  console.log(`ALGO ONE: ${average1}`);
-  console.log(`ALGO TWO: ${average2}`);
+  console.log("\nAVERAGES");
+  console.log("------------------------------");
+  console.log(`Algo One: ${average1}`);
+  console.log(`Algo Two: ${average2}`);
 }
 
 averages();
