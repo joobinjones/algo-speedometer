@@ -45,15 +45,15 @@ async function averages() {
   let average2 = time2 / max;
 
   if (average1 >= 1000) {
-    average1 = `${Number((average1 / 1000).toFixed(5))}s`;
+    average1 = `${(average1 / 1000).toFixed(5)}s`;
   } else {
-    average1 = `${Number(average1.toFixed(5))}ms`;
+    average1 = `${average1}ms`;
   }
 
   if (average2 >= 1000) {
-    average2 = `${Number((average2 / 1000).toFixed(5))}s`;
+    average2 = `${(average2 / 1000).toFixed(5)}s`;
   } else {
-    average2 = `${Number(average2.toFixed(5))}ms`;
+    average2 = `${average2}ms`;
   }
 
   console.log("\nAverage Run Times:");
