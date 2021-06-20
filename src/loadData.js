@@ -10,7 +10,7 @@ const faker = require("faker");
 module.exports = async function (dataPoints = 10000) {
   const input = [];
   for (let i = 0; i < dataPoints; i++) {
-    input.push(await faker.lorem.sentences().replaceAll(".", ""));
+    input.push(await faker.lorem.sentence().replace(/./g, ""));
   }
   return input;
 };
